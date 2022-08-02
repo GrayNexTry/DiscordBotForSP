@@ -7,7 +7,11 @@ bot = discord.Bot()
 
 def main():
     bot.run(pars('token'))
-    bd = sqlite3.connect('SPData.db')
+    connect = sqlite3.connect('SPData.db')
+    cursor = connect.cursor()
+
+    result = cursor.execute('SELECT ')
+
 
 def pars(arg: str):
     try:
