@@ -7,15 +7,6 @@ bot = discord.Bot()
 
 def main():
     bot.run(pars('token'))
-    connect = sqlite3.connect('SPData.db')
-    cursor = connect.cursor()
-
-    cursor.execute("SELECT * FROM ShopData")
-    print(cursor.fetchall())
-
-    cursor.close()
-
-
 
 def pars(arg: str):
     try:
