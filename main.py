@@ -1,3 +1,4 @@
+from discord import *
 import discord
 import configparser
 import sqlite3
@@ -8,8 +9,7 @@ cur = con.cursor()
 
 def main():
 
-    @bot.slash_command
-    async def
+
 
     bot.run(pars('token'))
 
