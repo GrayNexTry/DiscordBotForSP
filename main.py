@@ -1,13 +1,13 @@
 import discord
 import configparser
+import sqlite3
 
 bot = discord.Bot()
 
 
 def main():
     bot.run(pars('token'))
-
-
+    bd = sqlite3.connect('SPData.db')
 
 def pars(arg: str):
     try:
