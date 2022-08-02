@@ -3,8 +3,14 @@ import configparser
 import sqlite3
 
 bot = discord.Bot()
+con = sqlite3.connect('ShopData')
+cur = con.cursor()
 
 def main():
+
+    @bot.slash_command
+    async def
+
     bot.run(pars('token'))
 
 def pars(arg: str):
