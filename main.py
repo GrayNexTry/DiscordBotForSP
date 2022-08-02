@@ -8,6 +8,7 @@ def main():
     bot.run(pars('token'))
 
 
+
 def pars(arg: str):
     try:
         parser = configparser.ConfigParser()
