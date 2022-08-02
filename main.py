@@ -10,7 +10,10 @@ def main():
     connect = sqlite3.connect('SPData.db')
     cursor = connect.cursor()
 
-    cursor.execute("INSERT INTO ShopData VALUES ('NexTry', 'diamonds', '32', 'Aboba')")
+    cursor.execute("SELECT * FROM ShopData")
+    print(cursor.fetchall())
+
+    cursor.close()
 
 
 
