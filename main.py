@@ -14,7 +14,7 @@ def pars(arg: str):
         parser.read('config.ini')
         result = parser["Discord"][arg]
         return result
-    except:
+    except NameError:
         return 0
 
 
