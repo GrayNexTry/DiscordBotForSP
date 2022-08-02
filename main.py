@@ -4,7 +4,6 @@ import sqlite3
 
 bot = discord.Bot()
 
-
 def main():
     bot.run(pars('token'))
 
