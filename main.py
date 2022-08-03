@@ -3,11 +3,11 @@ import discord
 import configparser
 import sqlite3
 
-bot = discord.Bot()
 con = sqlite3.connect('ShopData')
 cur = con.cursor()
 
 def main():
+    bot = discord.Bot(guilds_id=pars('guilds_id'))
 
     bot.run(pars('token'))
 
